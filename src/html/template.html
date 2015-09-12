@@ -6,11 +6,33 @@
   <h4>Requirements for {{ category }}</h4>
   <h5>Things to do:</h5>
     {% for to_do in to_dos %}
+      <h4>Specs</h4>
       <ol>
         {% for spec in to_do['specs'] %}
           <li>{{ spec }}</li>
         {% endfor %}
       </ol>
+      <h4>Profile</h4>
+      <ol>
+        {% for profile in to_do['profiles'] %}
+          <li>{{ profile }}</li>
+        {% endfor %}
+      </ol>
+      <h4>Feeds</h4>
+      <ol>
+        {% for feed in to_do['feeds'] %}
+          <li>{{ feed }}</li>
+        {% endfor %}
+      </ol>
+      <h4>Tables</h4>
+        {% for table in to_do['tables'] %}
+        <h6>{{ table['table name'] }}</h6>
+        <ol>
+          {% for row in table['rows'] %}
+          <li>{{ row }}</li>
+          {% endfor %}
+        </ol>
+      {% endfor %}
     {% endfor %}
 
   </body>

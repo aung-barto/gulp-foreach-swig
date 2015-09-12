@@ -10,9 +10,9 @@
       "User should be able to delete a review.",
       "User should be able to see all latest reviews."
     ],
-    "profile": ["first name", "last name", "email", "city", "state", "country"],
-    "feed": ["movie title", "review content", "user id", "comment id", "upvote button", "downvote button"],
-    "table": [
+    "profiles": ["first name", "last name", "email", "city", "state", "country"],
+    "feeds": ["movie title", "review content", "user id", "comment id", "upvote button", "downvote button"],
+    "tables": [
       { "users": {
           "first name": "text",
           "last name": "text",
