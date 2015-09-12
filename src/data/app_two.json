@@ -1,0 +1,38 @@
+{
+  "project": "app 2",
+  "category": "movie review app",
+  "to_dos": [
+    {
+    "specs": [
+      "User should be able to log in.",
+      "User should be able to create a review.",
+      "User should be able to update a review.",
+      "User should be able to delete a review.",
+      "User should be able to see all latest reviews."
+    ],
+    "profile": ["first name", "last name", "email", "city", "state", "country"],
+    "feed": ["movie title", "review content", "user id", "comment id", "upvote button", "downvote button"],
+    "table": [
+      { "users": {
+          "first name": "text",
+          "last name": "text",
+          "email": "text",
+          "password": "password"
+        }
+      },
+      { "reviews": {
+          "movie title": "text",
+          "review content": "text",
+          "user id": "integer",
+          "votes": "integer"
+        }
+      },
+      { "comments": {
+          "post id": "integer",
+          "user id": "integer",
+          "comment": "text"
+        }
+      }]
+    }
+  ]
+}

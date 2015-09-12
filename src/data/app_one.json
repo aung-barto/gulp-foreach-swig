@@ -1,0 +1,42 @@
+{
+  "project": "app 1",
+  "category": "food app",
+  "to_dos": [
+    {
+    "specs": [
+      "User should be able to log in.",
+      "User should be able to create a recipe.",
+      "User should be able to update a recipe.",
+      "User should be able to delete a recipe.",
+      "User should be able to see all latest recipes."
+    ],
+    "profile": ["first name", "last name", "email", "city", "state", "country"],
+    "feed": ["recipe title", "recipe content", "user id", "comment id", "upvote button", "downvote button"],
+    "table": [
+      { "users": {
+          "first name": "text",
+          "last name": "text",
+          "email": "text",
+          "password": "password"
+        }
+      },
+      { "recipes": {
+          "recipe title": "text",
+          "recipe content": "text",
+          "time": "text",
+          "user id": "integer",
+          "votes": "integer"
+        }
+      },
+      { "comments": {
+          "post id": "integer",
+          "user id": "integer",
+          "comment": "text"
+        }
+      }]
+    }
+  ]
+}
+
+
+          

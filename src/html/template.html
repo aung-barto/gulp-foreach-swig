@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>{{ project }}</title>
+  </head>
+  <body>
+  <h4>Requirements for {{ category }}</h4>
+  <h5>Things to do:</h5>
+    {% for to_do in to_dos %}
+      <ol>
+        {% for spec in to_do['specs'] %}
+          <li>{{ spec }}</li>
+        {% endfor %}
+      </ol>
+    {% endfor %}
+
+  </body>
+</html>
